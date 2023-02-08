@@ -230,16 +230,36 @@ body {
     margin-right: 22px;
 }
 
-.accomodation-item-text {
+.item-underpan {
     padding: 32px 45px 45px 45px;
 }
 
-.accomodation-flex-body {
-    flex-direction: column-reverse;
+.accomodation-item-text {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price-descr {
+    margin: 0;
+    margin-bottom: 16px;
 }
 
 .accomodation-star-rating {
-    padding-top: 35px;
-    padding-right: 45px;
-    
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.accomodation-name {
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.accomodation-location {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.accomodation-item-btn {
+    padding: 13px 20px;
+    outline: 1px solid coral;
 }
