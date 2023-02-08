@@ -263,3 +263,10 @@ body {
     padding: 13px 20px;
     outline: 1px solid coral;
 }
+
+.all-hotels-item{
+    background-image: url(../img/all-hotels.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 373px 70px 27px 54px;
+}
