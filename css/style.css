@@ -104,9 +104,9 @@ body {
 }
 
 .offer-item {
-    height: 258px;
     width: 573px;
-    background-size: 258px 573px cover;
+    min-height: 258px;
+    background-size: cover;
     background-repeat: no-repeat;
     padding-left: 45px;
     padding-top: 40px;
@@ -127,9 +127,9 @@ body {
 
 .lux {
     width: 573px;
-    height: 540px;
     background-image: url(../img/lux.jpg);
-    background-size:cover;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-left: 45px;
     padding-top: 212px;
     padding-right: 229px;
