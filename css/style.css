@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    background-color: #E5E5E5;
 }
 
 *,
@@ -13,13 +14,53 @@ a {
     text-decoration: none;
 }
 
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller-Regular'),
+        url("../fonts/MullerRegular.woff2") format('.woff2'),
+        url("../fonts/MullerRegular.woff") format('.woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}   
+
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller-Light'),
+        url("../fonts/MullerLight.woff2") format('.woff2'),
+        url("../fonts/MullerLight.woff") format('.woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}   
+
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller-Medium'),
+        url("../fonts/MullerMedium.woff2") format('.woff2'),
+        url("../fonts/MullerMedium.woff") format('.woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}   
+
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller-Bold'),
+        url("../fonts/MullerRegular.woff2") format('.woff2'),
+        url("../fonts/MullerRegular.woff") format('.woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}   
+
 img {
     max-width: 100%;
 }
 
 body {
     min-width: 1200px;
-    font-family: 'font', sans-serif;
+    font-family: "Muller", sans-serif;
 }
 
 .list-reset {
@@ -49,24 +90,58 @@ body {
 /* header*/
 
 .header-container {
+    padding-top: 30px;
     align-items: center;
     margin-bottom: 30px;
 }
 
 .header-logo {
-    padding: 30px 0;
     align-items: flex-start;
     margin-right: 40px;
 }
 
+.header-logo-img {
+    border-radius: 15px;
+}
+
 .header-contact-link {
     margin-right: auto;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #666666;
+}
+
+.container-nav {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.header-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #666666;
+}
+
+.btn-link {
+    border: 1px solid #CC9933;
+    padding: 13px 20px 13px 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #CC9933;
+    border-radius: 10px;
 }
 
 .section-title {
     margin: 0;
     margin-bottom: 20px;
     padding-left: 40px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: #333333;
 }
 
 .header-nav {
@@ -87,7 +162,7 @@ body {
 }
 
 .header-btn-item {
-    padding: 13px 20px;
+    display: block;
     text-align: center;
     line-height: 16px;
     white-space: nowrap;
@@ -95,6 +170,17 @@ body {
 
 .header-btn-item:not(:last-child) {
     margin-right: 40px;
+}
+
+.header-account-link {
+    background-image: url(../img/header-account.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #CC9933;
 }
 
 /*Offer*/
@@ -106,52 +192,86 @@ body {
 .offer-item {
     width: 573px;
     min-height: 258px;
-    background-size: cover;
-    background-repeat: no-repeat;
     padding-left: 45px;
     padding-top: 40px;
     padding-right: 108px;
     padding-bottom: 40px;
+    border-radius: 15px;
+    
 }
 
 .maldiv {
-    background-image: url(../img/maldives.jpg);
+    background:linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(../img/maldives.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     margin-right: 24px;
     margin-bottom: 24px;
 }
 
 .crit {
-    background-image: url(../img/crit.jpg);
+    background-image:linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(../img/crit.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     margin-right: 24px;
 }
 
 .lux {
     width: 573px;
     background-image: url(../img/lux.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
-    padding-left: 45px;
-    padding-top: 212px;
-    padding-right: 229px;
-    padding-bottom: 40px;
+    background-repeat: no-repeat;
+    padding: 212px 229px 40px 45px;
 }
 
 .item-title {
     margin: 0;
     margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+.lux-item-title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    color: #FFFFFF;
 }
 
 .item-price {
     margin: 0;
     margin-bottom: 47px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.item-inform-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #F0BF5F;
+    background-image: url(../img/right-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 15px 15px;
+    padding-right: 15px;
+    text-align: center;
 }
 
 .about-us-descr {
     margin: 0;
     max-width: 888px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #000000;
 }
 
-/*service*/
+/*Services*/
 
 .services-list {
     flex-wrap: wrap;
@@ -159,9 +279,9 @@ body {
 
 .services-list-item {
     width: 570px;
-    outline: 1px solid coral;
     margin-right: 24px;
     margin-bottom: 24px;
+    font-size: 0;
 }
 
 .services-list-item:nth-child(2n) {
@@ -171,10 +291,13 @@ body {
 .services-item-img {
     height: 165px;
     flex-shrink: 0;
+    border-radius: 15px 15px 0px 0px;
 }
 
 .services-item-text {
     padding: 26px 126px 35px 45px;
+    border-radius: 0px 0px 15px 15px;
+    background: #FFFFFF;
 }
 
 .services-item-title {
@@ -182,8 +305,24 @@ body {
     margin-bottom: 5px;
 }
 
+.services-item-title-link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 200%;
+    color: #CC9933;
+    background-image: url(../img/offer-right-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 15px 15px;
+    padding-right: 15px;
+}
+
 .services-item-descr {
     margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #000000;
 }
 
 /* Advantages*/
@@ -195,8 +334,10 @@ body {
 .advantages-item {
     align-items: center;
     width: 276px;
-    outline: 1px solid coral;
+    background: #FFFFFF;
     margin-bottom: 22px;
+    border-radius: 15px;
+    padding: 40px 42px 32px 45px;
 }
 
 .advantages-item:not(:nth-child(4n)) {
@@ -205,7 +346,14 @@ body {
 
 .advantages-item-descr {
     margin: 0;
-    padding: 116px 42px 32px 45px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #000000;
+}
+
+.item-img {
+margin-bottom: 10px;
 }
 
 /*accomodation*/
