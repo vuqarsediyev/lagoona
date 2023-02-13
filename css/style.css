@@ -190,6 +190,7 @@ body {
 }
 
 .offer-item {
+    overflow: hidden;
     width: 573px;
     min-height: 258px;
     padding-left: 45px;
@@ -278,10 +279,12 @@ body {
 }
 
 .services-list-item {
+    overflow: hidden;
     width: 570px;
     margin-right: 24px;
     margin-bottom: 24px;
     font-size: 0;
+    border-radius: 15px;
 }
 
 .services-list-item:nth-child(2n) {
@@ -291,12 +294,10 @@ body {
 .services-item-img {
     height: 165px;
     flex-shrink: 0;
-    border-radius: 15px 15px 0px 0px;
 }
 
 .services-item-text {
     padding: 26px 126px 35px 45px;
-    border-radius: 0px 0px 15px 15px;
     background: #FFFFFF;
 }
 
@@ -364,10 +365,12 @@ margin-bottom: 10px;
 }
 
 .accomodation-item {
+    overflow: hidden;
     align-items: center;
     width: 374px;
-    outline: 1px solid coral;
     margin-bottom: 22px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
 }
 
 .accomodation-item-img {
@@ -387,9 +390,35 @@ margin-bottom: 10px;
     justify-content: space-between;
 }
 
-.price-descr {
-    margin: 0;
+.accomodation-item-price {
     margin-bottom: 16px;
+    align-items: center;
+}
+
+.price-from {
+    margin: 0;
+    margin-right: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #999999;
+}
+
+.price {
+    margin: 0;
+    margin-right: 4px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.price-night {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
 }
 
 .accomodation-star-rating {
@@ -400,21 +429,48 @@ margin-bottom: 10px;
 .accomodation-name {
     margin: 0;
     margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
 }
 
 .accomodation-location {
     margin: 0;
     margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #999999;
 }
 
 .accomodation-item-btn {
+    box-sizing: border-box;
     padding: 13px 20px;
-    outline: 1px solid coral;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #CC9933;
+    border: 1px solid #CC9933;
+    border-radius: 10px;
 }
 
 .all-hotels-item{
     background-image: url(../img/all-hotels.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 373px 70px 27px 54px;
+    padding: 373px 54px 27px 54px;
+    
+}
+
+.all-accomodation-link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 200%;
+    color: #FFFFFF;
+    background-image: url(../img/white-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: right center;
+    padding-right: 15px;
 }
