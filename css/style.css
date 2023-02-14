@@ -474,3 +474,29 @@ margin-bottom: 10px;
     background-position: right center;
     padding-right: 15px;
 }
+
+/* Tour Section - Forms*/
+
+.tour-form-container {
+    background-color: #E9E9E9;
+    border-radius: 15px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 45px;
+}
+
+.form {
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    width: 1080px;
+    height: 106px;
+    padding: 30px 28px;
+}
+
+
+.form-field {
+    border: none;
+    padding: 0;
+    margin: 0;
+}

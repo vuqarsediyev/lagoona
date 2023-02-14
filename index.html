@@ -471,6 +471,44 @@
                 </ul>
             </div>
         </section>
+        <section class="tour-form">
+            <div class="container tour-form-container">
+                <h2 class="section-title tour-form-title">
+                    Хочу тур
+                </h2>
+                <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="form flex">
+                    <div class="form-input flex">
+                        <fieldset class="form-field">
+                            <legend class="form-header">Город вылета</legend>
+                            <select name="city">
+                                <option value="Санкт-Петербург" selected>Санкт-Петербург</option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="form-field">
+                            <legend class="form-header">Страна</legend>
+                            <select name="country">
+                                <option value="Австралия" selected>Австралия</option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="form-field">
+                            <legend class="form-header">Дата прибытия</legend>
+                            <input type="date" name="date">
+                        </fieldset>
+                        <fieldset class="form-field">
+                            <legend class="form-header">Ночей</legend>
+                            <input type="number" name="night-num">
+                        </fieldset>
+                        <fieldset class="form-field">
+                            <legend class="form-header">Туристы</legend>
+                            <input type="number" name="tourist-num" required>
+                        </fieldset>
+                    </div>
+                    <div class="form-btn">
+                        <button type="submit">Найти</button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 </body>
 </html>
