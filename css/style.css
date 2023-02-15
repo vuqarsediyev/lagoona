@@ -480,23 +480,283 @@ margin-bottom: 10px;
 .tour-form-container {
     background-color: #E9E9E9;
     border-radius: 15px;
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-bottom: 45px;
+    padding: 45px;
 }
 
 .form {
-    box-sizing: border-box;
+    align-items: center;
     background-color: #FFFFFF;
     border-radius: 15px;
-    width: 1080px;
-    height: 106px;
     padding: 30px 28px;
 }
 
-
-.form-field {
-    border: none;
-    padding: 0;
+.form-title {
     margin: 0;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #000000;
+}
+
+.form-item {
+    margin-right: 40px;
+    font-weight: 400;
+}
+
+.form-item:last-child {
+    margin-right: 50px;
+}
+
+.select-form-item {
+    width: 169px;
+
+}
+
+.input-item {
+    width: 121px;
+}
+
+.form-select {
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+    border: none;
+}
+
+.form-input {
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+    border: none;
+    border-bottom: 1px solid #E9E9E9;
+}
+
+.date-input {
+    border: none;
+}
+
+.form-submit-btn {
+    box-sizing: border-box;
+    padding: 13px 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #CC9933;
+    border: 1px solid #CC9933;
+    border-radius: 10px;
+}
+
+/* Contacts */
+
+.contacts-body {
+    background-color: #FFFFFF;
+    padding: 45px;
+    border-radius: 15px;
+}
+
+.contacts-item-title {
+    margin: 0;
+    min-width: 146px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.contacts-item-address {
+    margin: 0;
+    margin-bottom: 23px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.item-padding {
+    padding-top: 25px;
+    padding-bottom: 23px;
+}
+
+.contacts-list-item {
+    width: 375px;
+    margin-right: 52px;
+    border-bottom: 1px solid #E9E9E9;
+}
+
+.contacts-call-descr {
+    flex-direction: column;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #CC9933;
+}
+
+.contacts-item-mail {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #CC9933;
+}
+
+.contacts-item-mail-descr {
+    margin: 0;
+    margin-bottom: 3px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #999999;
+
+}
+
+.contacts-item-mail-descr:last-child {
+    margin-bottom: 0;
+}
+
+.contacts-item-date {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.btn-wrapper {
+    box-sizing: border-box;
+    min-width: 213px;
+    padding-top: 45px;
+}
+
+.location-btn {
+    padding: 27px 30px;
+    border: 1px solid #CC9933;
+    border-radius: 10px;
+    color: #CC9933 ;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.contacts-img {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/*Footer*/
+
+.footer-body {
+    box-sizing: border-box;
+    background-color: #333333;
+    height: 341px;
+    padding-top: 45px;
+    padding-left: 45px;
+    padding-right: 45px;
+    border-radius: 15px;
+    padding-bottom: 45px;
+    background-image: url(../img/footer-logo.svg);
+    background-repeat: no-repeat;
+    background-position-x: 739px;
+    background-position-y: 112px;
+    background-size: 255px 255px;
+}
+
+.left-footer {
+    max-width: 302px;
+    margin-right: 125px;
+}
+
+.left-footer-item:not(:last-child) {
+    margin-bottom: 37px;
+}
+
+.left-footer-descr {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 190%;
+    color: #FFFFFF;
+}
+
+.left-footer-item-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #CC9933;
+}
+.center-footer {
+    width: 360px ;
+}
+
+.center-footer-item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.center-footer-descr {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.footer-tel-link  {
+    width: fit-content;
+    flex-direction: column;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #CC9933;
+}
+
+.footer-mail-link {
+    width: fit-content;
+    flex-direction: column;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #CC9933;
+}
+
+.right-footer-list {
+    flex-direction: column;
+    padding-left: 269px;
+}
+
+.right-footer-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.right-footer-social-link {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: right top;
+    width: 25px;
+    height: 25px;
+}
+
+.tripadvisor-link {
+    background-image: url(../img/tripadvisor-logo.svg);
+}
+
+.ok-link {
+    background-image: url(../img/ok-logo.svg);
+}
+
+.vk-link {
+    background-image: url(../img/vk-logo.svg);
 }
