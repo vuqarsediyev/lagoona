@@ -1,272 +1,334 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 ::before,
 ::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 body {
-    min-width: 1200px;
-    font-family: 'font', sans-serif;
+  min-width: 1200px;
+  font-family: 'font', sans-serif;
 }
 
 .list-reset {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .btn-reset {
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .container {
-    width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
-    margin-bottom: 70px;
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  margin-bottom: 70px;
 }
 
 /* header*/
 
 .header-container {
-    align-items: center;
-    margin-bottom: 30px;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .header-logo {
-    padding: 30px 0;
-    align-items: flex-start;
-    margin-right: 40px;
+  padding: 30px 0;
+  align-items: flex-start;
+  margin-right: 40px;
 }
 
 .header-contact-link {
-    margin-right: auto;
+  margin-right: auto;
 }
 
 .section-title {
-    margin: 0;
-    margin-bottom: 20px;
-    padding-left: 40px;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-left: 40px;
 }
 
 .header-nav {
-    align-items: center;
-    padding: 27px 45px;
+  align-items: center;
+  padding: 27px 45px;
 }
 
 .header-list-item:not(:last-child) {
-    margin-right: 45px;
+  margin-right: 45px;
 }
 
 .header-list-item:last-child {
-    margin-right: 134px;
+  margin-right: 134px;
 }
 
 .header-btn-list {
-    align-items: center;
+  align-items: center;
 }
 
 .header-btn-item {
-    padding: 13px 20px;
-    text-align: center;
-    line-height: 16px;
-    white-space: nowrap;
+  padding: 13px 20px;
+  text-align: center;
+  line-height: 16px;
+  white-space: nowrap;
 }
 
 .header-btn-item:not(:last-child) {
-    margin-right: 40px;
+  margin-right: 40px;
 }
 
 /*Offer*/
 
 .offer-list {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .offer-item {
-    width: 573px;
-    min-height: 258px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-left: 45px;
-    padding-top: 40px;
-    padding-right: 108px;
-    padding-bottom: 40px;
+  width: 573px;
+  min-height: 258px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 45px;
+  padding-top: 40px;
+  padding-right: 108px;
+  padding-bottom: 40px;
 }
 
 .maldiv {
-    background-image: url(../img/maldives.jpg);
-    margin-right: 24px;
-    margin-bottom: 24px;
+  background-image: url(../img/maldives.jpg);
+  margin-right: 24px;
+  margin-bottom: 24px;
 }
 
 .crit {
-    background-image: url(../img/crit.jpg);
-    margin-right: 24px;
+  background-image: url(../img/crit.jpg);
+  margin-right: 24px;
 }
 
 .lux {
-    width: 573px;
-    background-image: url(../img/lux.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-left: 45px;
-    padding-top: 212px;
-    padding-right: 229px;
-    padding-bottom: 40px;
+  width: 573px;
+  background-image: url(../img/lux.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 45px;
+  padding-top: 212px;
+  padding-right: 229px;
+  padding-bottom: 40px;
 }
 
 .item-title {
-    margin: 0;
-    margin-bottom: 15px;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .item-price {
-    margin: 0;
-    margin-bottom: 47px;
+  margin: 0;
+  margin-bottom: 47px;
 }
 
 .about-us-descr {
-    margin: 0;
-    max-width: 888px;
+  margin: 0;
+  max-width: 888px;
 }
 
 /*service*/
 
 .services-list {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .services-list-item {
-    width: 570px;
-    outline: 1px solid coral;
-    margin-right: 24px;
-    margin-bottom: 24px;
+  width: 570px;
+  outline: 1px solid coral;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 573px 165px;
+  overflow: hidden;
 }
 
 .services-list-item:nth-child(2n) {
-    margin-right: 0;
+  margin-right: 0;
 }
 
-.services-item-img {
-    height: 165px;
-    flex-shrink: 0;
+.first-services-item {
+  background-image: url(../img/services-img-1.jpg);
+}
+
+.second-services-item {
+  background-image: url(../img/services-img-2.jpg);
+}
+
+.third-services-item {
+  background-image: url(../img/services-img-3.jpg);
+}
+
+.fourth-services-item {
+  background-image: url(../img/services-img-4.jpg);
 }
 
 .services-item-text {
-    padding: 26px 126px 35px 45px;
+  padding-top: 195px;
+  padding-left: 45px;
+  padding-right: 126px;
+  padding-bottom: 35px;
 }
 
 .services-item-title {
-    margin: 0;
-    margin-bottom: 5px;
+  margin: 0;
+  margin-bottom: 5px;
 }
 
 .services-item-descr {
-    margin: 0;
+  margin: 0;
 }
 
 /* Advantages*/
 
 .advantages-list {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .advantages-item {
-    align-items: center;
-    width: 276px;
-    outline: 1px solid coral;
-    margin-bottom: 22px;
+  align-items: center;
+  max-width: 276px;
+  min-height: 276px;
+  outline: 1px solid coral;
+  margin-bottom: 22px;
+  background-position-x: 45px;
+  background-position-y: 42px;
+  background-repeat: no-repeat;
+  background-size: 66px 66px;
+}
+
+.first-advantages-item {
+  background-image: url(../img/bathtub.svg);
+}
+
+.second-advantages-item {
+  background-image: url(../img/hanger.svg);
+}
+
+.third-advantages-item {
+  background-image: url(../img/heating.svg);
+}
+
+.fourth-advantages-item {
+  background-image: url(../img/hotel-key.svg);
+}
+
+.fifth-advantages-item {
+  background-image: url(../img/parking.svg);
+}
+
+.sixth-advantages-item {
+  background-image: url(../img/reception.svg);
+} 
+
+.seventh-advantages-item {
+  background-image: url(../img/security-box.svg);
+}
+
+.eigth-advantages-item {
+  background-image: url(../img/swimming-pool.svg);
 }
 
 .advantages-item:not(:nth-child(4n)) {
-    margin-right: 22px;
+  margin-right: 22px;
 }
 
 .advantages-item-descr {
-    margin: 0;
-    padding: 116px 42px 32px 45px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding-top: 120px;
+  padding-left: 45px;
+  padding-right: 42px;
+  padding-bottom: 32px;
+  align-items: center;
+
 }
 
 /*accomodation*/
 
 .accomodation-list {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 
 }
 
 .accomodation-item {
-    align-items: center;
-    width: 374px;
-    outline: 1px solid coral;
-    margin-bottom: 22px;
+  align-items: center;
+  width: 374px;
+  outline: 1px solid coral;
+  margin-bottom: 22px;
 }
 
 .accomodation-item-img {
-    height: 217px;
+  height: 217px;
 }
 
 .accomodation-item:not(:nth-child(3n)) {
-    margin-right: 22px;
+  margin-right: 22px;
 }
 
 .item-underpan {
-    padding: 32px 45px 45px 45px;
+  padding: 32px 45px 45px 45px;
 }
 
 .accomodation-item-text {
-    align-items: center;
-    justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .price-descr {
-    margin: 0;
-    margin-bottom: 16px;
+  margin: 0;
+  margin-bottom: 16px;
 }
 
 .accomodation-star-rating {
-    margin: 0;
-    margin-bottom: 16px;
+  margin: 0;
+  margin-bottom: 16px;
 }
 
 .accomodation-name {
-    margin: 0;
-    margin-bottom: 16px;
+  margin: 0;
+  margin-bottom: 16px;
 }
 
 .accomodation-location {
-    margin: 0;
-    margin-bottom: 20px;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .accomodation-item-btn {
-    padding: 13px 20px;
-    outline: 1px solid coral;
+  padding: 13px 20px;
+  outline: 1px solid coral;
 }
 
-.all-hotels-item{
-    background-image: url(../img/all-hotels.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 373px 70px 27px 54px;
+.all-hotels-item {
+  background-image: url(../img/all-hotels.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 373px 70px 27px 54px;
 }
