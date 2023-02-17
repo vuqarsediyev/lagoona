@@ -112,6 +112,7 @@ body {
   padding-top: 40px;
   padding-right: 108px;
   padding-bottom: 40px;
+  overflow: hidden;
 }
 
 .maldiv {
@@ -327,6 +328,7 @@ body {
 }
 
 .all-hotels-item {
+  overflow: hidden;
   background-image: url(../img/all-hotels.jpg);
   background-repeat: no-repeat;
   background-size: cover;
