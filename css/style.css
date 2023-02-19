@@ -115,11 +115,6 @@ body {
   color: #666666;
 }
 
-.container-nav {
-  background-color: #FFFFFF;
-  border-radius: 15px;
-}
-
 .header-link {
   font-weight: 400;
   font-size: 16px;
@@ -150,6 +145,8 @@ body {
 .header-nav {
   align-items: center;
   padding: 27px 45px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
 }
 
 .header-list-item:not(:last-child) {
