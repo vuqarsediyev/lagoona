@@ -14,6 +14,11 @@ a {
     text-decoration: none;
 }
 
+:root {
+    --focus--hover--color: #CC9933;
+    --active--color: #A47312;
+}
+
 @font-face {
     font-family: 'Muller';
     src: local('Muller-Regular'),
@@ -69,11 +74,55 @@ body {
     list-style: none;
 }
 
+.mail {
+   transition: color 0.3s ease-in-out,
+               outline 0.3s ease-in-out;
+}
+
+.mail:focus-visible {
+    outline: 1px solid var(--focus--hover--color);
+    outline-offset: 2px;
+}
+
+.mail:hover {
+    color: #F0BF5F;
+}
+
+.mail:active {
+    color: #A47312;
+    outline: none;
+}
+.btn {
+    transition: background-color 0.3s ease-in-out,
+                border-color 0.3s ease-in-out,
+                color 0.3s ease-in-out,
+                outline 0.3s ease-in-out;
+}
+
 .btn-reset {
     padding: 0;
     border: none;
     background-color: transparent;
     cursor: pointer;
+}
+
+.btn:focus {
+    background-color: var(--focus--hover--color);
+    border-color: var(--focus--hover--color);
+    outline: var(--focus--hover--color);
+    color: #FFFFFF;
+}
+
+.btn:hover {
+    background-color: var(--focus--hover--color);
+    border-color: var(--focus--hover--color);
+    color: #FFFFFF;
+}
+
+.btn:active {
+    background-color: var(--active--color);
+    border-color: var(--active--color);
+    color: #FFFFFF;
 }
 
 .flex {
@@ -111,6 +160,26 @@ body {
     line-height: 20px;
     color: #666666;
 }
+    
+
+.call {
+    transition: color 0.3s ease-in-out, outline 0.3s ease-in-out;
+}
+
+
+.call:focus-visible {
+    outline: 1px solid var(--focus--hover--color);
+    outline-offset: 2px;
+}
+
+.call:hover {
+    color: var(--focus--hover--color);
+}
+
+.call:active {
+    color: var(--active--color);
+    outline: none;
+}
 
 .container-nav {
     background-color: #FFFFFF;
@@ -122,6 +191,21 @@ body {
     font-size: 16px;
     line-height: 16px;
     color: #666666;
+    transition: color 0.3s ease-in-out, outline 0.3s ease-in-out;
+}
+
+.header-link:focus {
+    outline: 1px solid var(--focus--hover--color);
+    outline-offset: 2px;
+}
+
+.header-link:hover {
+    color: var(--focus--hover--color);
+}
+
+.header-link:active {
+    color: var(--active--color);
+    outline: none;
 }
 
 .btn-link {
@@ -173,14 +257,46 @@ body {
 }
 
 .header-account-link {
-    background-image: url(../img/header-account.svg);
-    background-position: left center;
-    background-repeat: no-repeat;
-    padding-left: 30px;
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
     color: #CC9933;
+    transition: color 0.3s ease-in-out, outline 0.3s ease-in-out;
+}
+
+.header-account-link-icon {
+    transition: fill 0.3s ease-in-out;
+}
+
+.header-account-link-icon {
+    margin-right: 7px;
+    fill: var(--focus--hover--color);
+}
+
+.header-account-link:focus .header-account-link-icon{
+    fill: var(--focus--hover--color);
+}
+
+.header-account-link:hover .header-account-link-icon{
+    fill: #F0BF5F;
+}
+
+.header-account-link:active .header-account-link-icon {
+    fill: var(--focus--hover--color);
+}
+
+.header-account-link:focus-visible {
+    outline: 1px solid var(--focus--hover--color);
+    outline-offset: 2px;
+}
+
+.header-account-link:hover {
+    color: #F0BF5F;
+}
+
+.header-account-link:active {
+    color: var(--active--color);
+    outline: none;
 }
 
 /*Offer*/
@@ -190,16 +306,43 @@ body {
 }
 
 .offer-item {
-    overflow: hidden;
+    position: relative;
     width: 573px;
     min-height: 258px;
     padding-left: 45px;
     padding-top: 40px;
     padding-right: 108px;
     padding-bottom: 40px;
-    border-radius: 15px;
-    
 }
+
+.offer-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+}
+
+
+.offer-item:focus::after {
+    outline: 1px solid var(--focus--hover--color);
+    outline-offset: 5px;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.offer-item:hover .item-inform-link{
+    padding-right: 30px;
+    transition: padding-right 0.3s ease-in-out;
+}
+
+.offer-item:active .item-inform-link{
+    color: #FFFFFF;
+    transition: color 0.3s ease-in-out;
+}
+
 
 .maldiv {
     background:linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(../img/maldives.jpg);
@@ -207,6 +350,7 @@ body {
     background-repeat: no-repeat;
     margin-right: 24px;
     margin-bottom: 24px;
+    border-radius: 15px;
 }
 
 .crit {
@@ -214,6 +358,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     margin-right: 24px;
+    border-radius: 15px;
 }
 
 .lux {
@@ -222,6 +367,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     padding: 212px 229px 40px 45px;
+    border-radius: 15px;
 }
 
 .item-title {
@@ -261,6 +407,7 @@ body {
     background-size: 15px 15px;
     padding-right: 15px;
     text-align: center;
+
 }
 
 .about-us-descr {
@@ -279,12 +426,49 @@ body {
 }
 
 .services-list-item {
-    overflow: hidden;
     width: 570px;
     margin-right: 24px;
     margin-bottom: 24px;
     font-size: 0;
     border-radius: 15px;
+    position: relative;
+}
+
+.services-list-item-link::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+    outline: 1px solid var(--focus--hover--color);
+    outline-offset: 5px;
+}
+
+
+.services-list-item-link::after{
+    opacity: 1;
+    outline: 1px solid var(--focus--hover--color);
+    outline-offset: 5px;
+}
+
+.services-list-item:hover .services-item-title-link{
+    color: #F0BF5F;
+}
+
+.services-list-item:hover .services-link-arrow {
+    transform: translateX(10px);
+    stroke: #F0BF5F;
+}
+
+.services-list-item:active .services-item-title-link {
+    color: var(--active--color);
+}
+
+.services-list-item:active .services-link-arrow {
+    transform: translateX(10px);
+    stroke: var(--active--color);
 }
 
 .services-list-item:nth-child(2n) {
@@ -293,12 +477,16 @@ body {
 
 .services-item-img {
     height: 165px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     flex-shrink: 0;
 }
 
 .services-item-text {
     padding: 26px 126px 35px 45px;
     background: #FFFFFF;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .services-item-title {
@@ -311,11 +499,13 @@ body {
     font-size: 20px;
     line-height: 200%;
     color: #CC9933;
-    background-image: url(../img/offer-right-arrow.svg);
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: 15px 15px;
-    padding-right: 15px;
+}
+
+.services-link-arrow {
+    stroke:#CC9933;
+}
+
+.services-link-arrow {
 }
 
 .services-item-descr {
